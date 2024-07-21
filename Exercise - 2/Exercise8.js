@@ -1,15 +1,13 @@
 // Write a function that takes an object and returns an array of all the keys in the object.
 
-function keyOfObject(obj) {
-    let keys = Object.keys(obj);
-    return keys;
+function objectkeys(obj){
+    const objkey = Object.keys(obj);
+    return objkey;
 }
 
-const obj = {
-    Name: "Priyansh",
-    Age: 20,
-    City: "Goa",
-    Gender: "Male"
+const object = {
+    Name : "Ashish" , 
+    DOB  : 11-11-2005,
+    College : "AIT"
 }
-
-console.log(keyOfObject(obj));
+console.log(objectkeys(object));
