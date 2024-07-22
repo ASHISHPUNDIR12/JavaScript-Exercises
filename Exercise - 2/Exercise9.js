@@ -1,5 +1,41 @@
 // Write a function that takes an array of objects and returns an array of all the values of a specified property name.
 
+function valueselectors(array){
+    for( let object of array ){
+        
+      const objvalues =   Object.values(object);
+      return objvalues;
+    }
+}
+const Obj = [
+    {
+        Name : "ashish",
+        college : "DSEU"
+    },
+    {
+        umar : 19 ,
+        Skintone : "black"
+
+    }
+
+]
+console.log(valueselectors(Obj));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function valueOfObject(arrOfObj, propertyName) {
     const values = arrOfObj.map(obj => obj[propertyName]);
